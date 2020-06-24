@@ -12,9 +12,14 @@ namespace MicroRabbit.Transfer.Domain.EventHandlers
     {
         private readonly IEventBus _bus;
 
-        public TransferEventHandler(IEventBus bus)
+        //public TransferEventHandler(IEventBus bus)
+        //{
+        //    _bus = bus;
+        //}
+
+        public TransferEventHandler()
         {
-            _bus = bus;
+
         }
 
         public Task Handle(TransferCreatedEvent @event)
