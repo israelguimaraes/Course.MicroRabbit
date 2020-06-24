@@ -1,12 +1,7 @@
 ﻿using MicroRabbit.Presentation.Web.Models.DTO;
-using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Text;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace MicroRabbit.Presentation.Web.Services
