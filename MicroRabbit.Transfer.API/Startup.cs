@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MediatR;
+using MicroRabbit.Infra.IoC;
 using MicroRabbit.Transfer.Data.Contexts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -40,7 +41,7 @@ namespace MicroRabbit.Transfer.API
 
             services.AddMediatR(typeof(Startup));
 
-            //DependencyContainer.RegisterIoC(services);
+            DependencyContainer.RegisterIoC(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
