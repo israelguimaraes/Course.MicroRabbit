@@ -8,12 +8,10 @@ namespace MicroRabbit.Transfer.Domain.EventHandlers
 {
     public class TransferEventHandler : IEventHandler<TransferCreatedEvent>
     {
-        private readonly IEventBus _bus;
         private readonly ITransferRepository _transferRepository;
 
-        public TransferEventHandler(IEventBus bus, ITransferRepository transferRepository)
+        public TransferEventHandler(ITransferRepository transferRepository)
         {
-            _bus = bus;
             _transferRepository = transferRepository;
         }
 
