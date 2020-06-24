@@ -40,7 +40,7 @@ namespace MicroRabbit.Transfer.API
 
             services.AddMediatR(typeof(Startup));
 
-            DependencyContainer.RegisterIoC(services);
+            //DependencyContainer.RegisterIoC(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
