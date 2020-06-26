@@ -17,7 +17,7 @@ namespace MicroRabbit.Presentation.Web.Services
 
         public async Task Transfer(TransferDTO transferDTO)
         {
-            var uri = "https://localhost:5001/api/banking";
+            var uri = "https://localhost:44381/api/banking";
             var json = JsonConvert.SerializeObject(transferDTO);
             var transferContent = new StringContent(json, Encoding.UTF8, "application/json");
 
